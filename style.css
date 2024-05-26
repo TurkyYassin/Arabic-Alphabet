@@ -410,6 +410,8 @@
 .courseview .right button:hover{
     background: #1256EA;
 }
+/* Responsive Start */
+
 @media (max-width: 1024px){
   .courseheader .contentheader{
   margin-left: -100px;
@@ -441,8 +443,53 @@
 }
 .courseview .right{
   margin-top: 50px;
+  }
 }
 
+@media (max-width: 600px){
+  
+  .courseheader {
+    display: block;
+  }
+  .courseheader .contentheader{
+    width: 300px;
+    margin-left: -110px;
+  }
+  .courseheader .contentheader ul{
+    padding-top: 20px;
+  }
+  .courseheader .contentheader ul li{
+    display: flex;
+    font-size: 16px;
+  }
+  .courseheader .contentheader h2{
+    margin-left: -80px;
+    margin-top: -50px;
+    }
+    .courseheader .contentheader p{
+      margin-left: -80px;
+      font-size: 18px;
+    }
+    .courseheader .imgheader{
+      margin-left: -210px;
+      margin-top: -50px;
+    }
+    .courseheader .imgheader img{
+      width: 350px;
+    }
+    .imgheader::before {
+      display: none;
+    }
+    .courseview .right{
+      display: none;
+    }
+    .courseview .left .secone {
+      width: 350px;
+    }
+    .courseview .left .sectwo{
+      width: 350px;
+    }
+    
 }
 
 
